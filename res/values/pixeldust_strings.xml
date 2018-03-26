@@ -623,4 +623,8 @@
     <string name="slim_recents_enter_exit_animation_translate">Translate</string>
     <string name="slim_recents_enter_exit_animation_fade">Fade</string>
 
+    <!-- Show statusbar on lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Statusbar</string>
+    <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
+
 </resources>

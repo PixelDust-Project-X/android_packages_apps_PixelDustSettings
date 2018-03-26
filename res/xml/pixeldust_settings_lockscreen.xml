@@ -30,6 +30,12 @@
         </Preference>
 
         <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_show_status_bar"
+            android:title="@string/lockscreen_show_status_bar_title"
+            android:summary="@string/lockscreen_show_status_bar_summary"
+            android:defaultValue="true" />
+
+        <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_charging_current_title"
             android:summary="@string/lockscreen_charging_current_summary"

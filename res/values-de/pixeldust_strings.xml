@@ -611,4 +611,8 @@
     <string name="slim_recents_enter_exit_animation_translate">Transformieren</string>
     <string name="slim_recents_enter_exit_animation_fade">Verblassen</string>
 
+    <!-- Show statusbar on lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Statusleiste</string>
+    <string name="lockscreen_show_status_bar_summary">Statusleiste auf dem Sperrbildschirm anzeigen</string>
+
 </resources>
