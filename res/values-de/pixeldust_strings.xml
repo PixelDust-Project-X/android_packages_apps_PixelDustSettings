@@ -610,4 +610,30 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Benachrichtigungen mit transparentem Hintergrund zeichnen</string>
 
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Spielemodus</string>
+    <string name="gaming_mode_summary">Einstellungen für den Spielemodus anpassen</string>
+    <string name="gaming_mode_enabled_summary">Einschalten des Spielemodus erlauben</string>
+    <string name="gaming_mode_app_picker_title">Für diese Apps automatisch aktivieren</string>
+    <string name="add_gaming_mode_package_title">Apps für den Spielemodus hinzufügen</string>
+    <string name="add_gaming_mode_package_summary">Der Spielemodus wird automatisch aktiviert, wenn diese Apps geöffnet werden, und deaktiviert, wenn sie geschlossen werden</string>
+    <string name="gaming_mode_headsup_title">Benachrichtigungen blockieren</string>
+    <string name="gaming_mode_headsup_summary">Anrufe und Alarme sind ausgenommen</string>
+    <string name="gaming_mode_hardware_keys_title">HW-Tasten</string>
+    <string name="gaming_mode_hardware_keys_summary">Wenn der Spielemodus aktiviert ist, werden Tasten gesperrt</string>
+    <string name="gaming_mode_brightness_title">Automatische Helligkeit deaktivieren</string>
+    <string name="gaming_mode_brightness_summary">Automatische Bildschirmhelligkeit deaktivieren, wenn der Spielemodus aktiviert ist</string>
+    <string name="gaming_mode_ringer_title">Klingelton im Spielemodus</string>
+    <string name="gaming_mode_ringer_off_title">Nicht ändern</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrieren</string>
+    <string name="gaming_mode_ringer_dnd_title">Bitte nicht stören</string>
+    <string name="gaming_mode_ringer_silent_title">Stumm</string>
+    <string name="gaming_mode_notifications_title">Benachrichtigungen im Spielemodus</string>
+    <string name="gaming_mode_notifications_off_title">Deaktiviert</string>
+    <string name="gaming_mode_notifications_notif_title">Benachrichtigungen anzeigen</string>
+    <string name="gaming_mode_notifications_toast_title">Toasts anzeigen</string>
+    <string name="gaming_mode_notifications_all_title">Benachrichtigungen und Toasts anzeigen</string>
+    <string name="gaming_mode_dynamic_title">Dynamischer Modus</string>
+    <string name="gaming_mode_dynamic_summary">Versuchen Spiele-Apps automatisch zu zu erkennen und hinzuzufügen</string>
+
 </resources>
