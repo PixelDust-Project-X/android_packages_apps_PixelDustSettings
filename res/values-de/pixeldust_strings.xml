@@ -653,4 +653,8 @@
     <string name="data_activity_arrow_title">Richtungspfeile bei Datenaktivität anzeigen</string>
     <string name="data_activity_arrow_summary">Datenaktivitätsindikatoren für Wi-Fi und mobile Daten anzeigen</string>
 
+    <!-- QS background opacity -->
+    <string name="qs_theme_category">UI-Stil</string>
+    <string name="qs_panel_alpha_title">Undurchlässigkeit des Hintergrunds</string>
+
 </resources>
