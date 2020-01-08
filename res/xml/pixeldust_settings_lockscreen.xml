@@ -48,6 +48,14 @@
             android:entryValues="@array/lock_clock_fonts_values"
             android:defaultValue="4" />
 
+        <com.pixeldust.settings.preferences.SystemSettingSeekBarPreference
+            android:key="lock_clock_font_size"
+            android:title="@string/clock_font_size_title"
+            android:max="108"
+            settings:min="54"
+            settings:units="dp"
+            android:defaultValue="58" />
+
         <com.pixeldust.settings.preferences.SystemSettingListPreference
             android:key="lock_date_font_style"
             android:title="@string/date_font_style_title"
