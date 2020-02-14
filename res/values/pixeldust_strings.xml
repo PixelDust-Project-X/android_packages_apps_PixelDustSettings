@@ -241,6 +241,9 @@
     <string name="lockscreen_clockdate_category">Clock &amp; date</string>
     <string name="date_font_style_title">Date font style</string>
 
+    <!-- Lockscreen clock & date font size -->
+    <string name="lock_date_font_size_title">Date font size</string>
+
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Clock font options</string>
     <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
