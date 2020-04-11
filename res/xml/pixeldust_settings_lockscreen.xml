@@ -56,6 +56,11 @@
             settings:units="dp"
             android:defaultValue="50" />
 
+        <Preference
+            android:key="clock_font_size_warning"
+            android:selectable="false"
+            android:summary="@string/clock_font_size_warning_summary" />
+
         <com.pixeldust.settings.preferences.SystemSettingListPreference
             android:key="lock_date_font_style"
             android:title="@string/date_font_style_title"
