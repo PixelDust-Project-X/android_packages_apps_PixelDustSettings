@@ -226,9 +226,21 @@
     <string name="clock_date_left">Links neben der Uhrzeit</string>
     <string name="clock_date_position">Datumsanzeige positionieren</string>
 
-    <!-- Statusbar Clock Font Style & Size -->
-    <string name="status_bar_clock_font_style_title">Schriftstil</string>
-    <string name="status_bar_clock_font_size_title">Schriftgröße</string>
+    <!-- Statusbar & Lock Clock Font Style & Size -->
+    <string name="status_bar_clock_font_style_title">Uhr Schriftstil</string>
+    <string name="status_bar_clock_font_size_title">Uhr Schriftgröße</string>
+    <string name="lockscreen_clockdate_category">Uhr &amp; Datum</string>
+    <string name="date_font_style_title">Datum Schriftstil</string>
+
+    <!-- Lockscreen clock & date font size -->
+    <string name="lock_date_font_size_title">Datum Schriftgröße</string>
+    <string name="clock_font_size_title">Uhr Schriftgröße</string>
+    <string name="clock_font_size_warning_summary">Falls du die Typografische Uhranzeige verwenden solltest, dann beträgt die empfohlene Größe zwischen 20 und 60 Über 60 ist für den Typografischen Stil leider zu groß!</string>
+
+    <!-- LS OwnerInfo Font & Size -->
+    <string name="owner_info_category">Besitzerinfo Schriftoptionen</string>
+    <string name="lock_owner_fonts_title">Besitzerinfo Schriftstil</string>
+    <string name="lock_owner_font_size_title">Besitzerinfo Schriftgröße</string>
 
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Schriftstil der Uhranzeige</string>
