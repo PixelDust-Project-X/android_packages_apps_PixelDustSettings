@@ -36,6 +36,11 @@
             android:defaultValue="true" />
 
         <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_translucent_notifications_bg_enabled"
+            android:title="@string/translucent_lockscreen_notifications_bg_title"
+            android:defaultValue="false" />
+
+        <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_charging_current_title"
             android:summary="@string/lockscreen_charging_current_summary"

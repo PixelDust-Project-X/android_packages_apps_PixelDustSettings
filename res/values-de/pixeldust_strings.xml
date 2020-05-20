@@ -607,4 +607,7 @@
     <string name="status_bar_toggle_brightness">Helligkeitsregler</string> 
     <string name="status_bar_toggle_brightness_summary">Über die Statusleiste streichen, um die Helligkeit zu einzustellen</string>
 
+    <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Benachrichtigungen mit transparentem Hintergrund zeichnen</string>
+
 </resources>

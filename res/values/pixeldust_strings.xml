@@ -619,4 +619,7 @@
     <string name="status_bar_toggle_brightness">Brightness control</string> 
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
+
 </resources>
