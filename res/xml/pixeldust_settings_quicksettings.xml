@@ -53,14 +53,14 @@
         android:defaultValue="true" />
 
     <!-- QS brightness slider -->
-    <com.pixeldust.settings.preferences.SecureSettingSwitchPreference
+    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_show_brightness_title"
         android:summary="@string/qs_show_brightness_summary"
         android:defaultValue="true" />
 
     <!-- QS brightness slider position -->
-    <com.pixeldust.settings.preferences.SecureSettingSwitchPreference
+    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_brightness_position_bottom"
         android:title="@string/qs_brightness_position_bottom_title"
         android:summary="@string/qs_brightness_position_bottom_summary"
@@ -69,7 +69,7 @@
 
     <!-- QS brightness icon -->
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_show_brightness_icon"
+        android:key="qs_show_auto_brightness"
         android:title="@string/qs_show_brightness_icon_title"
         android:summary="@string/qs_show_brightness_icon_summary"
         android:dependency="qs_show_brightness"
@@ -77,15 +77,15 @@
 
     <!-- QS brightness minmax buttons -->
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_show_brightness_minmax"
+        android:key="qs_show_minmax_brightness"
         android:title="@string/qs_show_brightness_minmax_title"
         android:summary="@string/qs_show_brightness_minmax_summary"
         android:dependency="qs_show_brightness"
         android:defaultValue="true"/>
 
     <!-- QS security footer -->
-    <com.pixeldust.settings.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_secure"
+    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_show_security"
         android:title="@string/qs_show_secure_title"
         android:summary="@string/qs_show_secure_summary"
         android:defaultValue="true" />
