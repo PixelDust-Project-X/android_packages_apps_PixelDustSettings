@@ -52,6 +52,13 @@
         android:summary="@string/qs_clock_summary"
         android:defaultValue="true" />
 
+    <!-- QS footer brightness slider -->
+    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_brightness_slider_footer"
+        android:title="@string/qs_brightness_slider_footer_title"
+        android:summary="@string/qs_brightness_slider_footer_summary"
+        android:defaultValue="false" />
+
     <!-- QS brightness slider -->
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_show_brightness"
