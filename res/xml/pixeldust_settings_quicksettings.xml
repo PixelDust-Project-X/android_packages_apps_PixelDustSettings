@@ -57,14 +57,16 @@
         android:key="qs_brightness_slider_footer"
         android:title="@string/qs_brightness_slider_footer_title"
         android:summary="@string/qs_brightness_slider_footer_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:persistent="false" />
 
     <!-- QS brightness slider -->
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_show_brightness_title"
         android:summary="@string/qs_show_brightness_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true"
+        android:persistent="false" />
 
     <!-- QS brightness slider position -->
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference

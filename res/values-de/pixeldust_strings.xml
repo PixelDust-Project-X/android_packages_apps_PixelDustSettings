@@ -638,4 +638,8 @@
     <string name="gaming_mode_notifications_feedback_title">Feedback zu Benachrichtigungen deaktivieren</string>
     <string name="gaming_mode_notifications_feedback_summary">Benachrichtigungstöne &amp; Vibrationen blockieren, wenn der Spielemodus aktiviert ist</string>
 
+    <!-- QS footer brightness slider -->
+    <string name="qs_brightness_slider_footer_title">Helligkeitsregler in der Fußzeile (MIUI Stil)</string>
+    <string name="qs_brightness_slider_footer_summary">Helligkeitsregler in der Fußzeile unter den Schnelleinstellungen anzeigen</string>
+
 </resources>
