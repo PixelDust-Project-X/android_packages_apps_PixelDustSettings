@@ -44,6 +44,7 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.pixeldust.PixeldustUtils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
@@ -72,7 +73,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mShowArrows;
     private ListPreference mNetTrafficType;
     private CustomSeekBarPreference mNetTrafficSize;
+    private SystemSettingSwitchPreference mShowDataArrows;
 
+    private static final String DATA_ACTIVITY_ARROW = "data_activity_arrow";
     private static final String NETWORK_TRAFFIC_FONT_SIZE  = "network_traffic_font_size";
 
     private static final String STATUS_BAR_CLOCK = "status_bar_clock";
@@ -159,7 +162,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         }
         mNetTrafficLocation.setSummary(mNetTrafficLocation.getEntry());
 
-	// clock settings
+        // clock settings
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
         mClockDateDisplay = (ListPreference) findPreference(STATUS_BAR_CLOCK_DATE_DISPLAY);
@@ -244,6 +247,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mBatteryStyle.setOnPreferenceChangeListener(this);
 
         updateBatteryOptions(batterystyle);
+
+        // Data activity arrows - remove preference if disabled at build time
+        mShowDataArrows = (SystemSettingSwitchPreference) findPreference(DATA_ACTIVITY_ARROW);
+        if (!getActivity().getResources().getBoolean(com.android.internal.R.bool.config_showActivity)) {
+            getPreferenceScreen().removePreference(mShowDataArrows);
+        } else {
+            mShowDataArrows.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -384,6 +395,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         } else if (preference == mBatteryStyle) {
             int value = Integer.parseInt((String) objValue);
             updateBatteryOptions(value);
+            return true;
+        } else if (preference == mShowDataArrows) {
+            PixeldustUtils.showSystemUiRestartDialog(getContext());
             return true;
         }
         return false;
