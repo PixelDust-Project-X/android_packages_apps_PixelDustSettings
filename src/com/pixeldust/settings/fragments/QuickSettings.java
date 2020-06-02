@@ -32,6 +32,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.pixeldust.PixeldustUtils;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -103,6 +104,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             if (value) {
                 Settings.System.putIntForUser(getActivity().getContentResolver(),
                         QS_BRIGHTNESS_SLIDER_FOOTER, 0, UserHandle.USER_CURRENT);
+                PixeldustUtils.showSystemUiRestartDialog(getContext());
             }
             updateDependencies(preference, value);
             return true;
