@@ -90,7 +90,7 @@
         android:title="@string/qs_show_brightness_minmax_title"
         android:summary="@string/qs_show_brightness_minmax_summary"
         android:dependency="qs_show_brightness"
-        android:defaultValue="true"/>
+        android:defaultValue="false"/>
 
     <!-- QS security footer -->
     <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
