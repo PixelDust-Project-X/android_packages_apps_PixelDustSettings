@@ -94,6 +94,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             if (value) {
                 Settings.System.putIntForUser(getActivity().getContentResolver(),
                         QS_SHOW_BRIGHTNESS, 0, UserHandle.USER_CURRENT);
+                PixeldustUtils.showSystemUiRestartDialog(getContext());
             }
             updateDependencies(preference, value);
             return true;
