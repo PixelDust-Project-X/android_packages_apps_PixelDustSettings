@@ -669,4 +669,9 @@
     <string name="qs_theme_category">Style</string>
     <string name="qs_panel_alpha_title">Background opacity</string>
 
+    <!-- QS statusbar background -->
+    <string name="qs_header_background_title">Statusbar background</string>
+    <string name="qs_header_background_black">Black</string>
+    <string name="qs_header_background_transparent">Transparent</string>
+
 </resources>
