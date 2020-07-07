@@ -225,6 +225,12 @@
     <string name="clock_date_right">Rechts neben der Uhrzeit</string>
     <string name="clock_date_left">Links neben der Uhrzeit</string>
     <string name="clock_date_position">Datumsanzeige positionieren</string>
+    <string name="status_bar_clock_auto_hide_title">Uhrzeit automatisch ausblenden</string>
+    <string name="status_bar_clock_auto_hide_summary">Uhrzeit in regelmäßigen Abständen ein- und ausblenden, um Platz in der Statusleiste zu sparen</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Dauer der Ausblendung</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">Anzahl der Sekunden, für welche die Uhrzeit ausgeblendet bleibt</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Dauer der Anzeige</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">Anzahl der Sekunden, bis die Uhrzeit ausgeblendet wird</string>
 
     <!-- Statusbar Clock Font Style & Size -->
     <string name="status_bar_clock_font_style_title">Schriftstil</string>

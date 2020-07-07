@@ -91,6 +91,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
     private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 18;
+    private static final String CLOCK_DATE_AUTO_HIDE_HDUR = "status_bar_clock_auto_hide_hduration";
+    private static final String CLOCK_DATE_AUTO_HIDE_SDUR = "status_bar_clock_auto_hide_sduration";
 
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
@@ -112,6 +114,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mClockDatePosition;
     private CustomSeekBarPreference mClockSize;
     private ListPreference mClockFontStyle;
+    private CustomSeekBarPreference mHideDuration;
+    private CustomSeekBarPreference mShowDuration;
 
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
@@ -235,6 +239,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mClockDatePosition.setValue(String.valueOf(clockDatePosition));
         mClockDatePosition.setSummary(mClockDatePosition.getEntry());
         mClockDatePosition.setOnPreferenceChangeListener(this);
+
+        mHideDuration = (CustomSeekBarPreference) findPreference(CLOCK_DATE_AUTO_HIDE_HDUR);
+        int hideVal = Settings.System.getIntForUser(resolver,
+                Settings.System.STATUS_BAR_CLOCK_AUTO_HIDE_HDURATION, 60, UserHandle.USER_CURRENT);
+        mHideDuration.setValue(hideVal);
+        mHideDuration.setOnPreferenceChangeListener(this);
+
+        mShowDuration = (CustomSeekBarPreference) findPreference(CLOCK_DATE_AUTO_HIDE_SDUR);
+        int showVal = Settings.System.getIntForUser(resolver,
+                Settings.System.STATUS_BAR_CLOCK_AUTO_HIDE_SDURATION, 5, UserHandle.USER_CURRENT);
+        mShowDuration.setValue(showVal);
+        mShowDuration.setOnPreferenceChangeListener(this);
 
         setDateOptions();
 
@@ -398,6 +414,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mShowDataArrows) {
             PixeldustUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mHideDuration) {
+            int HDuration = (Integer) objValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_CLOCK_AUTO_HIDE_HDURATION, HDuration, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mShowDuration) {
+            int SDuration = (Integer) objValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_CLOCK_AUTO_HIDE_SDURATION, SDuration, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
