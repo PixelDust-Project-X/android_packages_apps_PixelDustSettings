@@ -84,13 +84,9 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
                     KEY_USE_SLIM_RECENTS, 0);
             mSlimRecents.setEnabled(true);
             mSlimRecents.setChecked(useSlim != 0);
-            mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
-            mAlternativeRecentsCategory.removePreference(findPreference(PREF_THREE_BUTTONS_DISABLED));
-        } else if (navigationMode == 1) {
-            mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
-            mSlimRecents.setEnabled(false);
+            mAlternativeRecentsCategory.removePreference(mWarning);
+            mAlternativeRecentsCategory.removePreference(mGestureSystemNavigation);
         } else {
-            mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
             mSlimRecents.setEnabled(false);
         }
     }

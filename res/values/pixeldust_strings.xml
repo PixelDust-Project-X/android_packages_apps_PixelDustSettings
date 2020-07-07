@@ -556,6 +556,7 @@
     <!-- Slim recents -->
     <string name="alternative_recents_category">Alternative recents</string>
     <string name="alternative_recents_swipe_up_enabled_warning_summary">When using a mode other than "3-button navigation", only stock recents are supported</string>
+    <string name="recents_system_navigation_title">Tap here to open the system navigation settings</string>
     <string name="slim_recents_title">Slim Recents</string>
     <string name="slim_recents_summary">Enable to use an alternative recents screen</string>
     <string name="slim_recents_fragment_title">Slim recents settings</string>
