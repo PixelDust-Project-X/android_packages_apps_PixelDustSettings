@@ -41,8 +41,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.pixeldust.settings.preferences.SecureSettingMasterSwitchPreference;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,11 +49,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
-    private static final String LOCKSCREEN_VISUALIZER_ENABLED = "lockscreen_visualizer_enabled";
     private static final String LOCKSCREEN_CHARGING_ANIMATION = "lockscreen_charging_animation";
 
     private PreferenceCategory mChargingAnimation;
-    private SecureSettingMasterSwitchPreference mVisualizerEnabled;
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
 
@@ -83,12 +79,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             // Devices with Active Edge inherit SystemUIGoogle and therefore do not support the Charging Animation feature
             prefScreen.removePreference(mChargingAnimation);
         }
-
-        mVisualizerEnabled = (SecureSettingMasterSwitchPreference) findPreference(LOCKSCREEN_VISUALIZER_ENABLED);
-        mVisualizerEnabled.setOnPreferenceChangeListener(this);
-        int visualizerEnabled = Settings.Secure.getInt(resolver,
-                LOCKSCREEN_VISUALIZER_ENABLED, 0);
-        mVisualizerEnabled.setChecked(visualizerEnabled != 0);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -97,11 +87,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
-            return true;
-        } else if (preference == mVisualizerEnabled) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putInt(getContentResolver(),
-                    LOCKSCREEN_VISUALIZER_ENABLED, value ? 1 : 0);
             return true;
         }
         return false;

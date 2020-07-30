@@ -341,20 +341,6 @@
     <string name="quick_pulldown_right">Rechts</string>
     <string name="quick_pulldown_always">Immer</string>
 
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_enable">Audio-Equalizer</string>
-    <string name="lockscreen_visualizer_enable_summary">Audio-Equalizer beim Abspielen von Musik anzeigen</string>
-    <string name="lockscreen_autocolor_title">Automatische Farbwahl</string>
-    <string name="lockscreen_autocolor_summary">Die Farbe wird mit dem Hintergrund des Sperrbildschirms abgestimmt</string>
-    <string name="lockscreen_autocolor_lavalamp">Lavalampe muss deaktiviert sein</string>
-    <string name="lockscreen_lavalamp_title">Lavalampe</string>
-    <string name="lockscreen_lavalamp_summary">Die Farbgebung der Equalizerbalken wird stufenlos überblendet</string>
-    <string name="lockscreen_lavalamp_speed_title">Geschwindigkeit des Farbwechsels</string>
-    <string name="lockscreen_solid_lines_category">Equalizerbalken</string>
-    <string name="lockscreen_solid_units_count_title">Anzahl Balken</string>
-    <string name="lockscreen_solid_fudge_factor_title">Höhe der Balken</string>
-    <string name="lockscreen_solid_units_opacity_title">Deckkraft der Balken</string>
-
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Taschen-Erkennung</string>
     <string name="pocket_judge_summary">Verhindert Bildschirminteraktionen, wenn sich das Gerät in einer Tasche befindet</string>
