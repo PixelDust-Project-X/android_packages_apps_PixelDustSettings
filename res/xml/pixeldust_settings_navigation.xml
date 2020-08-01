@@ -68,11 +68,4 @@
         android:dependency="enable_nav_bar"
         android:defaultValue="true" />
 
-    <Preference
-        android:key="pulse"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:dependency="enable_nav_bar"
-        android:fragment="com.pixeldust.settings.fragments.PulseSettings" />
-
 </PreferenceScreen>
