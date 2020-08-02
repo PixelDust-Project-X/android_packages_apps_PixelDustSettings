@@ -91,6 +91,7 @@
             android:key="ambient_visualizer_enabled"
             android:title="@string/ambient_visualizer_title"
             android:summary="@string/ambient_visualizer_summary"
+            android:dependency="lockscreen_visualizer_enabled"
             android:defaultValue="false" />
 
     </PreferenceCategory>
