@@ -549,10 +549,6 @@
     <string name="gesture_navbar_handle_middle">Middle pill</string>
     <string name="gesture_navbar_handle_large">Large pill</string>
 
-    <!-- Ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient visualizer</string>
-    <string name="ambient_visualizer_summary">Shows white visualization bars on ambient display unless custom color is selected</string>
-
     <!-- Slim recents -->
     <string name="alternative_recents_category">Alternative recents</string>
     <string name="alternative_recents_swipe_up_enabled_warning_summary">When using a mode other than "3-button navigation", only stock recents are supported</string>

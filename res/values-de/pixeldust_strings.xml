@@ -537,10 +537,6 @@
     <string name="gesture_navbar_handle_middle">Mittlere Pille</string>
     <string name="gesture_navbar_handle_large">Große Pille</string>
 
-    <!-- Ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient-Equalizer</string>
-    <string name="ambient_visualizer_summary">Es werden weiße Equalizerbalken auf dem Ambient Display angezeigt, sofern keine benutzerdefinierte Farbe ausgewählt wurde.</string>
-
     <!-- Slim recents -->
     <string name="alternative_recents_category">Alternativer Anwendungsverlauf</string>
     <string name="alternative_recents_swipe_up_enabled_warning_summary">Wenn ein anderer Navigationsmodus als "Bedienung über 3 Schaltflächen" aktiv ist, dann wird lediglich der Standard Anwendungsverlauf unterstützt.</string>
